@@ -11,7 +11,6 @@ const FinishSignIn = () => {
   useEffect(() => {
     const currentUrl = window.location.href;
 
-    // Check if this is a sign-in with email link
     if (isSignInWithEmailLink(auth, currentUrl)) {
       // Store the full URL with all the query parameters in session storage
       sessionStorage.setItem('signInUrl', currentUrl);
