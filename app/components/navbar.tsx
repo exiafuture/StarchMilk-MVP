@@ -6,20 +6,19 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="container">        
-        <div className="svg-container">
-          <Image
-            className="dark:invert"
-            src="https://nextjs.org/icons/next.svg"
-            alt="Next.js logo"
-            width={170}
-            height={38}
-            priority
-          />
-        </div>
+        <Image
+          className="nav-icon dark:invert"
+          src="https://nextjs.org/icons/next.svg"
+          alt="Next.js logo"
+          width={89}
+          height={35}
+          priority
+        />
         
         <ul className="nav-links">
-          <li><a href="#" className="nav-link">Home</a></li>
+          <li><a href="#" className="nav-link">Services</a></li>
           <li><a href="#" className="nav-link">About</a></li>
+          <li><a href="#" className="nav-link">Pricing</a></li>
           <li><a href="#" className="nav-link">Contact</a></li>
         </ul>
       </div>
