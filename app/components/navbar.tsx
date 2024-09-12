@@ -7,8 +7,8 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="container">        
         <Image
-          className="nav-icon dark:invert"
-          src="https://nextjs.org/icons/next.svg"
+          className="nav-icon"
+          src="/images/logo.png"
           alt="Next.js logo"
           width={89}
           height={35}
