@@ -50,11 +50,14 @@
 
 .nav-link {
     text-decoration: none;
-    color: black;
     text-align: center;
     font-weight: bold;
     font-size: 17px;
     padding: 0 8px;
+}
+
+.dark .nav-link {
+    color: white;
 }
 
 @media only screen and (max-width: 933px) {
