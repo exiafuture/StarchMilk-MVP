@@ -30,8 +30,8 @@
 
 .toggle-button-theme {
     border-radius: 10px;
-    padding: 5px;
-    background-color: rgba(42,42,42,0.8);
+    padding: 6.2px;
+    background-color: rgba(187,193,201,0.8);
     border: none; /* Remove border if present */
     display: flex; /* Ensure proper alignment */
     align-items: center; /* Center contents inside button */
