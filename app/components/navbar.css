@@ -1,15 +1,15 @@
 .navbar {
     background-color: #f87171;
-    margin-top: 17px;
-    margin-bottom: 28px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     position: fixed;
-    border-radius: 20px;
+    border-radius: 0px;
     padding-left: 15px;
     padding-right: 6px;
     padding-top: 15px;
     padding-bottom: 15px;
-    margin-left: 2.6%;
-    margin-right: 2.6%;
+    margin-left: 0%;
+    margin-right: 0%;
     z-index: 8;
     left: 0;
     right: 0;
