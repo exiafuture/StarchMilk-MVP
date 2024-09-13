@@ -4,10 +4,7 @@
     margin-bottom: 0px;
     position: fixed;
     border-radius: 0px;
-    padding-left: 15px;
-    padding-right: 6px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 6px;
     margin-left: 0%;
     margin-right: 0%;
     z-index: 8;
@@ -27,7 +24,21 @@
 
 .nav-links {
     display: flex;
+    align-items: center;
     list-style-type: none;
+}
+
+.toggle-button-theme {
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(42,42,42,0.8);
+    border: none; /* Remove border if present */
+    display: flex; /* Ensure proper alignment */
+    align-items: center; /* Center contents inside button */
+    justify-content: center; /* Center contents inside button */
+    cursor: pointer; /* Add pointer cursor for better UX */
+    height: 32px; /* Set a fixed height if needed */
+    line-height: 1; /* Align text vertically */
 }
 
 .nav-link {
@@ -36,7 +47,7 @@
     text-align: center;
     font-weight: bold;
     font-size: 17px;
-    padding: 8px;
+    padding: 0 8px;
 }
 
 @media only screen and (max-width: 933px) {
@@ -56,6 +67,10 @@
         left: 0;
         bottom:0;
         right: 0;
+    }
+
+    .toggle-button-theme {
+        display: none;
     }
     
     .nav-icon {
