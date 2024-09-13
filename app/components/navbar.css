@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #f87171;
+    background-color: ghostwhite;
     margin-top: 0px;
     margin-bottom: 0px;
     position: fixed;
@@ -10,6 +10,11 @@
     z-index: 8;
     left: 0;
     right: 0;
+    transition: background-color 0.3s ease;
+}
+
+.dark .navbar {
+    background-color: #1e293b;
 }
 
 .container {
@@ -20,6 +25,7 @@
 
 .nav-icon {
     display: block;
+    margin-left: 1.5rem;
 }
 
 .nav-links {
@@ -31,6 +37,7 @@
 .toggle-button-theme {
     border-radius: 10px;
     padding: 6.2px;
+    margin-left:1.2rem;
     background-color: rgba(187,193,201,0.8);
     border: none; /* Remove border if present */
     display: flex; /* Ensure proper alignment */
@@ -43,7 +50,7 @@
 
 .nav-link {
     text-decoration: none;
-    color: rgb(233, 224, 278);
+    color: black;
     text-align: center;
     font-weight: bold;
     font-size: 17px;
