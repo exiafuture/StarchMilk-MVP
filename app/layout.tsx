@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Starch-Milk",
+  title: "Anecdote",
   description: "An automated clerk for your inventories",
 };
 

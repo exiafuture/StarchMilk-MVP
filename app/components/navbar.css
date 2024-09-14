@@ -80,7 +80,7 @@
     }
 
     .toggle-button-theme {
-        display: none;
+        display: block;
     }
     
     .nav-icon {
