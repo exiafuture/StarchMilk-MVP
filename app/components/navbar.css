@@ -10,7 +10,7 @@
     z-index: 8;
     left: 0;
     right: 0;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.1s ease;
 }
 
 .dark .navbar {
@@ -54,10 +54,11 @@
     font-weight: bold;
     font-size: 17px;
     padding: 0 8px;
+    color: var(--foreground-light);
 }
 
 .dark .nav-link {
-    color: white;
+    color: var(--foreground-dark);
 }
 
 @media only screen and (max-width: 933px) {
