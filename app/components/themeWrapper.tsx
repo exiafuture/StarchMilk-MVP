@@ -7,7 +7,7 @@ const ThemeProviderWrapper = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     const currentTheme = localStorage.getItem("liferunnertheme");
     if (currentTheme) {
-      document.documentElement.setAttribute("data-theme", currentTheme);
+      document.documentElement.setAttribute("liferunnertheme", currentTheme);
     }
   }, []);
 
