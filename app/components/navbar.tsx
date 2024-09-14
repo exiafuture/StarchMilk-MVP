@@ -1,26 +1,14 @@
 "use client";
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import "./navbar.css"
 import Image from 'next/image';
+import { usetheme } from "./themeContext";
 
-const NavBar = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    const darkModePreference = localStorage.getItem("liferunnertheme") === "dark";
-    setIsDarkMode(darkModePreference);
-    document.documentElement.classList.toggle("dark", darkModePreference);
-  }, []);
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    const theme = !isDarkMode ? "dark" : "light";
-    document.documentElement.classList.toggle("dark", !isDarkMode);
-    localStorage.setItem("liferunnertheme", theme);
-  };
+const NavBar: React.FC = () => {
+  const { theme, toggleTheme } = usetheme();
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${theme}`}>
       <div className="container">
         <Image
           className="nav-icon"
@@ -37,8 +25,8 @@ const NavBar = () => {
           <li><a href="#" className="nav-link">Pricing</a></li>
           <li><a href="#" className="nav-link">Contact</a></li>
           <li>
-            <button className="toggle-button-theme" onClick={toggleDarkMode}>
-              {isDarkMode ?
+            <button className="toggle-button-theme" onClick={toggleTheme}>
+              {theme === "light" ?
                 <svg xmlns="http://www.w3.org/2000/svg" id="moon-svg" width="1.5rem" height="1.5rem" fill="white">
                   <path d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 
                   0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243
