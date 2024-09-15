@@ -1,26 +1,18 @@
 .navbar {
     background-color: rgb(210,220,230);
-    margin-top: 0px;
-    margin-bottom: 0px;
     position: fixed;
-    border-radius: 0px;
     padding: 15px 6px;
-    margin-left: 0%;
-    margin-right: 0%;
     z-index: 8;
     left: 0;
     right: 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
     transition: background-color 0.1s ease;
 }
 
 .dark .navbar {
     background-color: #1e293b;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .nav-icon {
@@ -29,7 +21,9 @@
 }
 
 .nav-links {
+    float: left;
     display: flex;
+    margin-right: 1.5rem;
     align-items: center;
     list-style-type: none;
 }
@@ -39,13 +33,13 @@
     padding: 6.2px;
     margin-left:1.2rem;
     background-color: rgba(187,193,201,0.8);
-    border: none; /* Remove border if present */
-    display: flex; /* Ensure proper alignment */
-    align-items: center; /* Center contents inside button */
-    justify-content: center; /* Center contents inside button */
-    cursor: pointer; /* Add pointer cursor for better UX */
-    height: 32px; /* Set a fixed height if needed */
-    line-height: 1; /* Align text vertically */
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer; 
+    height: 35px; 
+    line-height: 1; 
 }
 
 .nav-link {
@@ -63,17 +57,10 @@
 
 @media only screen and (max-width: 933px) {
     .navbar {
-        margin-top: 0px;
-        margin-bottom: 0px;
         position: fixed;
-        border-radius: 0px;
         padding: 15px 6px;
-        margin-left: 0%;
-        margin-right: 0%;
         z-index: 17;
-        left: 0;
         bottom:0;
-        right: 0;
     }
 
     .dark .navbar {
@@ -86,13 +73,11 @@
     
     .nav-icon {
         display: none;
-    }
-
-    .container {
-        justify-content: space-evenly;
+        margin-left: 0rem;
     }
 
     .nav-link {
+        margin-right: 0rem;
         padding-left: 8px;
         padding-right: 8px;
     }
