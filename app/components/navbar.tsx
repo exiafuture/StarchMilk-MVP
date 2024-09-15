@@ -9,14 +9,16 @@ const NavBar: React.FC = () => {
 
   return (
     <nav className={`navbar ${theme}`}>
-      <Image
-        className="nav-icon"
-        src="/images/logo.png"
-        alt="Next.js logo"
-        width={98}
-        height={44}
-        priority
-      />
+      <div className="nav-icon">
+        <Image
+          src="/images/logo.png"
+          alt="Next.js logo"
+          width={98}
+          height={44}
+          priority
+        />
+        <h1 className="nav-name">Anecdote</h1>
+      </div>
 
       <ul className="nav-links">
         <li><a href="#" className="nav-link">Services</a></li>

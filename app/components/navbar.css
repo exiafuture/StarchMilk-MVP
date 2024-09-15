@@ -16,8 +16,16 @@
 }
 
 .nav-icon {
-    display: block;
+    display: flex;
+    font-weight: bold;
+    align-items:center;
     margin-left: 1.5rem;
+}
+
+.nav-name {
+    margin-left: 0.44rem;
+    font-size: 1.5rem;
+    font-style: italic;
 }
 
 .nav-links {
