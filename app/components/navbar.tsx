@@ -3,28 +3,31 @@ import React from 'react';
 import "./navbar.css"
 import Image from 'next/image';
 import { usetheme } from "./themeContext";
+import Link from "next/link";
 
 const NavBar: React.FC = () => {
   const { theme, toggleTheme } = usetheme();
 
   return (
     <nav className={`navbar ${theme}`}>
-      <div className="nav-icon">
-        <Image
-          src="/images/logo.png"
-          alt="Next.js logo"
-          width={98}
-          height={44}
-          priority
-        />
-        <h1 className="nav-name">Anecdote</h1>
-      </div>
+      <Link href="/">
+        <div className="nav-icon">
+          <Image
+            src="/images/logo.png"
+            alt="Next.js logo"
+            width={98}
+            height={44}
+            priority
+          />
+          <h1 className="nav-name">Anecdote</h1>
+        </div>
+      </Link>
 
       <ul className="nav-links">
-        <li><a href="#" className="nav-link">Services</a></li>
-        <li><a href="#" className="nav-link">About</a></li>
-        <li><a href="#" className="nav-link">Pricing</a></li>
-        <li><a href="#" className="nav-link">Contact</a></li>
+        <li><Link href="#" className="nav-link">Services</Link></li>
+        <li><Link href="#" className="nav-link">About</Link></li>
+        <li><Link href="/pricing-plans" className="nav-link">Pricing</Link></li>
+        <li><Link href="#" className="nav-link">Contact</Link></li>
         <li>
           <button className="toggle-button-theme" onClick={toggleTheme}>
             {theme === "light" ?

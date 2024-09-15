@@ -66,9 +66,10 @@
 @media only screen and (max-width: 933px) {
     .navbar {
         position: fixed;
-        padding: 15px 6px;
+        padding: 12px 3px;
         z-index: 17;
         bottom:0;
+        justify-content: space-evenly;
     }
 
     .dark .navbar {
@@ -81,11 +82,9 @@
     
     .nav-icon {
         display: none;
-        margin-left: 0rem;
     }
 
     .nav-link {
-        margin-right: 0rem;
         padding-left: 8px;
         padding-right: 8px;
     }
