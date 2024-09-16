@@ -96,12 +96,25 @@
   cursor: pointer;
 }
 
+.dark .card button {
+  background-color: #12321d;
+  color: cyan;
+}
+
 .card button strong {
   color: white;
 }
 
+.dark .card button strong {
+  color: lightgrey;
+}
+
 .card button:hover {
-  background-color: #0056b3;
+  background-color: #eccc8f;
+}
+
+.dark .card button:hover {
+  background-color: #12621d;
 }
 
 .popular {
