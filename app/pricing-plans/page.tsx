@@ -11,12 +11,12 @@ const Pricing = () => {
         <p>Find the life saving solution to meet your requirements. Monthly or annual assistance is await!</p>
 
         <div className="toggle-assistance">
-          <button className={view === "monthly" ? "active" : ""}
+          <button className={view === "monthly" ? "active" : "inactive"}
             onClick={() => setView("monthly")}>
             Monthly Plan
           </button>
           <button
-            className={view === "annual" ? "active" : ""}
+            className={view === "annual" ? "active" : "inactive"}
             onClick={() => setView("annual")}
           >
             Annual Plan
