@@ -68,7 +68,7 @@ const Pricing = () => {
         <section className="cards">
           <div className="card">
             <h2>Mere Guiding Plan</h2>
-            <p className="price">$8.99</p>
+            <p className="price">$89.9</p>
             <ul>
               <li>Feature 1</li>
               <li>Feature 2</li>
@@ -77,7 +77,7 @@ const Pricing = () => {
           </div>
           <div className="card popular">
             <h2>Companion Plan</h2>
-            <p className="price">$12.99</p>
+            <p className="price">$129.9</p>
             <ul>
               <li>Feature 1</li>
               <li>Feature 2</li>
@@ -89,7 +89,7 @@ const Pricing = () => {
           </div>
           <div className="card">
             <h2>Side Kick Plan</h2>
-            <p className="price">$18.99</p>
+            <p className="price">$189.9</p>
             <ul>
               <li>Feature 1</li>
               <li>Feature 2</li>
@@ -118,21 +118,21 @@ const Pricing = () => {
           <tbody>
             <tr>
               <td>Feature 1</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>Yes</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
             </tr>
             <tr>
               <td>Feature 2</td>
-              <td>No</td>
-              <td>Yes</td>
-              <td>Yes</td>
+              <td>❎</td>
+              <td>✅</td>
+              <td>✅</td>
             </tr>
             <tr>
               <td>Feature 3</td>
-              <td>No</td>
-              <td>No</td>
-              <td>Yes</td>
+              <td>❎</td>
+              <td>❎</td>
+              <td>✅</td>
             </tr>
           </tbody>
         </table>
