@@ -113,17 +113,22 @@
   border-collapse: collapse;
 }
 
+.comparison-table h2 {
+  margin-bottom: 1.2rem;
+  font-weight:800;
+}
+
 .comparison-table th, .comparison-table td {
   padding: 15px;
   border: 1px solid #000000;
 }
 
 .dark .comparison-table th {
-  background-color: #edfef9;
+  background-color: #133c6e;
 }
 
 .comparison-table th {
-  background-color: #00030d;
+  background-color: #edfef8;
 }
 
 .comparison-table td {
