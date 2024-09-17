@@ -67,6 +67,9 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   background-color: #f9f9f9;
 }
 
@@ -92,6 +95,7 @@
 .card ul {
   list-style: none;
   padding: 0;
+  margin-bottom:8px;
 }
 
 .card ul li {
@@ -103,7 +107,8 @@
 }
 
 .card button {
-  margin-top: 15px;
+  margin-top: auto;
+  align-self: center;
   padding: 10px 20px;
   border: none;
   border-radius: 0.35rem;
@@ -135,7 +140,7 @@
 }
 
 .popular {
-  border: 1px solid #003ecd;
+  border: 1px solid #e32b31;
 }
 
 .comparison-table table {
