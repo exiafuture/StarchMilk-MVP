@@ -58,7 +58,8 @@ const Pricing = () => {
               <li>350 words each slot</li>
               <li>10 images top per slot</li>
               <li>3 90-second videos per slot</li>
-              <li>open forum access and specialised advising</li>
+              <li>open forum access</li>
+              <li>specialised advising</li>
             </ul>
             <button>Choose <strong>Side Kick</strong></button>
           </div>
@@ -71,8 +72,11 @@ const Pricing = () => {
             <h2>Mere Guiding Plan</h2>
             <p className="price">$89.9</p>
             <ul>
-              <li>Feature 1</li>
-              <li>Feature 2</li>
+              <li>100 slots for idea storage</li>
+              <li>100 words each slot</li>
+              <li>3 images top per slot</li>
+              <li>a 30 seconds video top per slot</li>
+              <li>open forum access</li>
             </ul>
             <button>Choose <strong>Mere</strong></button>
           </div>
@@ -80,11 +84,11 @@ const Pricing = () => {
             <h2>Companion Plan</h2>
             <p className="price">$129.9</p>
             <ul>
-              <li>Feature 1</li>
-              <li>Feature 2</li>
-              <li>Feature 3</li>
-              <li>Feature 4</li>
-              <li>Feature 5</li>
+              <li>300 slots for idea storage</li>
+              <li>260 words each slot</li>
+              <li>5 images top per slot</li>
+              <li>a 90 seconds video top per slot</li>
+              <li>open forum access</li>
             </ul>
             <button>Choose <strong>Companion</strong></button>
           </div>
@@ -92,13 +96,12 @@ const Pricing = () => {
             <h2>Side Kick Plan</h2>
             <p className="price">$189.9</p>
             <ul>
-              <li>Feature 1</li>
-              <li>Feature 2</li>
-              <li>Feature 3</li>
-              <li>Feature 4</li>
-              <li>Feature 5</li>
-              <li>Feature 6</li>
-              <li>Feature 7</li>
+              <li>600 slots for idea storage</li>
+              <li>350 words each slot</li>
+              <li>10 images top per slot</li>
+              <li>3 90-second videos per slot</li>
+              <li>open forum access</li>
+              <li>specialised advising</li>
             </ul>
             <button>Choose <strong>Side Kick</strong></button>
           </div>
