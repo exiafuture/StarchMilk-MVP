@@ -17,6 +17,10 @@
   color: #666;
 }
 
+.dark .header p {
+  color: floralwhite;
+}
+
 .toggle-assistance {
   display: flex;
   margin-top: 15px;
@@ -71,7 +75,16 @@
   margin-bottom: 15px;
 }
 
+.dark .card h2 {
+  color: slategrey;
+}
+
+.dark .card .price {
+  color: #221211;
+}
+
 .card .price {
+  font-weight: 800;
   font-size: 1.5rem;
   margin-bottom: 5px;
 }
@@ -83,6 +96,10 @@
 
 .card ul li {
   margin: 10px 0;
+}
+
+.dark .card ul li {
+  color: #314222;
 }
 
 .card button {
