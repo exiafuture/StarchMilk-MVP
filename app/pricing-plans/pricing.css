@@ -114,6 +114,7 @@
   align-self: center;
   padding: 10px 20px;
   border: none;
+  width: 21rem;
   border-radius: 0.35rem;
   background-color: #eecc42;
   color: green;
@@ -171,6 +172,14 @@
 
 .comparison-table td {
   text-align: center;
+}
+
+.dark .comparison-table td small {
+  color: #d4d4d4;
+}
+
+.comparison-table td small {
+  color: #787878;
 }
 
 @media (max-width: 933px) {

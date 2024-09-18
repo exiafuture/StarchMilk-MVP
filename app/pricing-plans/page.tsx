@@ -121,6 +121,24 @@ const Pricing = () => {
           </thead>
           <tbody>
             <tr>
+              <td>Content Slots</td>
+              <td>
+                100
+                <br />
+                <small>then $0.05 per slot</small>
+              </td>
+              <td>
+                300
+                <br />
+                <small>then $0.02 per slot</small>
+              </td>
+              <td>
+                600
+                <br />
+                <small>then $0.01 per slot</small>
+              </td>
+            </tr>
+            <tr>
               <td>Feature 1</td>
               <td>✅</td>
               <td>✅</td>
