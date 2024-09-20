@@ -174,12 +174,12 @@ const Pricing = () => {
               <td>
                 x 3 per day
                 <br />
-                <small>then 0.6 per prompt</small>
+                <small>then 0.9 per prompt</small>
               </td>
               <td>
                 x 8 per day
                 <br />
-                <small>then 0.8 per prompt</small>
+                <small>then 0.4 per prompt</small>
               </td>
             </tr>
             <tr>
