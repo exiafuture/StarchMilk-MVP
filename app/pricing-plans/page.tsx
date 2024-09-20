@@ -139,22 +139,66 @@ const Pricing = () => {
               </td>
             </tr>
             <tr>
-              <td>Feature 1</td>
+              <td># Words per slot</td>
+              <td>
+                100
+              </td>
+              <td>260</td>
+              <td>350</td>
+            </tr>
+            <tr>
+              <td># Image per slot</td>
+              <td>3</td>
+              <td>5</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>video per slot</td>
+              <td>30 sec video x 1</td>
+              <td>
+                90 sec video x 1
+                <br />
+                <small>then 0.5 per video</small>
+              </td>
+              <td>
+                90 sec video x 3
+                <br />
+                <small>
+                  then 0.1 per video
+                </small>
+              </td>
+            </tr>
+            <tr>
+              <td>Creation Advisory</td>
               <td>✅</td>
               <td>✅</td>
               <td>✅</td>
             </tr>
             <tr>
-              <td>Feature 2</td>
-              <td>❎</td>
+              <td>Open Forum</td>
+              <td>✅</td>
               <td>✅</td>
               <td>✅</td>
             </tr>
             <tr>
-              <td>Feature 3</td>
+              <td>Editor's Choice</td>
               <td>❎</td>
               <td>❎</td>
               <td>✅</td>
+            </tr>
+            <tr>
+              <td>Generative Prompt</td>
+              <td>x 1 per day</td>
+              <td>
+                x 3 per day
+                <br />
+                <small>then 0.6 per prompt</small>
+              </td>
+              <td>
+                x 8 per day
+                <br />
+                <small>then 0.8 per prompt</small>
+              </td>
             </tr>
           </tbody>
         </table>

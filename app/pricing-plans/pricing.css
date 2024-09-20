@@ -144,12 +144,17 @@
 }
 
 .popular {
-  border: 1px solid #e32b31;
+  border: 3px solid #e32b31;
 }
 
 .comparison-table table {
   width: 100%;
   border-collapse: collapse;
+}
+
+.comparison-table table td:first-child {
+  text-align: left;
+  width: 20%;
 }
 
 .comparison-table h2 {
