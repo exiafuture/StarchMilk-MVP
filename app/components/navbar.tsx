@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
       </Link>
 
       <ul className="nav-links">
-        <li><Link href="#" className="nav-link">Services</Link></li>
+        <li><Link href="/services" className="nav-link">Services</Link></li>
         <li><Link href="#" className="nav-link">About</Link></li>
         <li><Link href="/pricing-plans" className="nav-link">Pricing</Link></li>
         <li><Link href="#" className="nav-link">Contact</Link></li>
