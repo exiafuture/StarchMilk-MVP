@@ -28,7 +28,7 @@ const Pricing = () => {
         <section className="cards">
           <div className="card">
             <h2>Mere Guiding Plan</h2>
-            <p className="price">$8.99</p>
+            <p className="price">$13.99</p>
             <ul>
               <li>100 slots for idea storage</li>
               <li>100 words each slot</li>
@@ -40,7 +40,7 @@ const Pricing = () => {
           </div>
           <div className="card popular">
             <h2>Companion Plan</h2>
-            <p className="price">$12.99</p>
+            <p className="price">$15.99</p>
             <ul>
               <li>300 slots for idea storage</li>
               <li>260 words each slot</li>
@@ -52,7 +52,7 @@ const Pricing = () => {
           </div>
           <div className="card">
             <h2>Side Kick Plan</h2>
-            <p className="price">$18.99</p>
+            <p className="price">$26.99</p>
             <ul>
               <li>600 slots for idea storage</li>
               <li>350 words each slot</li>
@@ -70,7 +70,7 @@ const Pricing = () => {
         <section className="cards">
           <div className="card">
             <h2>Mere Guiding Plan</h2>
-            <p className="price">$89.9</p>
+            <p className="price">$139.9</p>
             <ul>
               <li>100 slots for idea storage</li>
               <li>100 words each slot</li>
@@ -82,7 +82,7 @@ const Pricing = () => {
           </div>
           <div className="card popular">
             <h2>Companion Plan</h2>
-            <p className="price">$129.9</p>
+            <p className="price">$159.9</p>
             <ul>
               <li>300 slots for idea storage</li>
               <li>260 words each slot</li>
@@ -94,7 +94,7 @@ const Pricing = () => {
           </div>
           <div className="card">
             <h2>Side Kick Plan</h2>
-            <p className="price">$189.9</p>
+            <p className="price">$269.9</p>
             <ul>
               <li>600 slots for idea storage</li>
               <li>350 words each slot</li>
@@ -169,6 +169,20 @@ const Pricing = () => {
               </td>
             </tr>
             <tr>
+              <td>Generative Prompt</td>
+              <td>x 1 per day</td>
+              <td>
+                x 3 per day
+                <br />
+                <small>then 0.6 per prompt</small>
+              </td>
+              <td>
+                x 8 per day
+                <br />
+                <small>then 0.8 per prompt</small>
+              </td>
+            </tr>
+            <tr>
               <td>Creation Advisory</td>
               <td>✅</td>
               <td>✅</td>
@@ -185,20 +199,6 @@ const Pricing = () => {
               <td>❎</td>
               <td>❎</td>
               <td>✅</td>
-            </tr>
-            <tr>
-              <td>Generative Prompt</td>
-              <td>x 1 per day</td>
-              <td>
-                x 3 per day
-                <br />
-                <small>then 0.6 per prompt</small>
-              </td>
-              <td>
-                x 8 per day
-                <br />
-                <small>then 0.8 per prompt</small>
-              </td>
             </tr>
           </tbody>
         </table>
