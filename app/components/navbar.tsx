@@ -25,9 +25,9 @@ const NavBar: React.FC = () => {
 
       <ul className="nav-links">
         <li><Link href="/services" className="nav-link">Services</Link></li>
-        <li><Link href="#" className="nav-link">About</Link></li>
+        <li><Link href="/about" className="nav-link">About</Link></li>
         <li><Link href="/pricing-plans" className="nav-link">Pricing</Link></li>
-        <li><Link href="#" className="nav-link">Contact</Link></li>
+        <li><Link href="/contact" className="nav-link">Contact</Link></li>
         <li>
           <button className="toggle-button-theme" onClick={toggleTheme}>
             {theme === "light" ?
