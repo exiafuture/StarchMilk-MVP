@@ -4,6 +4,8 @@ import "./pricing.css";
 
 const Pricing = () => {
   const [view, setView] = useState<"monthly" | "annual">("monthly");
+  const [plan, setPlan] = useState<"guide" | "companion" | "kick">("kick");
+
   return (
     <div className="page">
       <header className="header">

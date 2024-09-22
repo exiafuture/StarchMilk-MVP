@@ -209,6 +209,6 @@
   }
   
   .comparison-table {
-    padding-bottom: 5rem;
+    display: none;
   }
 }
