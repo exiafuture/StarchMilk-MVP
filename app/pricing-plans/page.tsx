@@ -9,6 +9,7 @@ const Pricing = () => {
       <header className="header">
         <h1>Choose your plan</h1>
         <p>Find the life saving solution to meet your requirements. Monthly or annual assistance is await!</p>
+        <small>Use annual plans to enjoy 83% of the original price</small>
 
         <div className="toggle-assistance">
           <button className={view === "monthly" ? "active" : "inactive"}
@@ -56,7 +57,7 @@ const Pricing = () => {
               <li>600 slots for idea storage</li>
               <li>350 words each slot</li>
               <li>10 images top per slot</li>
-              <li>3 90-second videos per slot</li>
+              <li>three 90-second videos per slot</li>
               <li>open forum access</li>
               <li>specialised advising</li>
             </ul>
@@ -97,7 +98,7 @@ const Pricing = () => {
               <li>600 slots for idea storage</li>
               <li>350 words each slot</li>
               <li>10 images top per slot</li>
-              <li>3 90-second videos per slot</li>
+              <li>three 90-second videos per slot</li>
               <li>open forum access</li>
               <li>specialised advising</li>
             </ul>
@@ -123,17 +124,17 @@ const Pricing = () => {
               <td>
                 100
                 <br />
-                <small>then $0.05 per slot</small>
+                <small>then $0.5 per slot</small>
               </td>
               <td>
                 300
                 <br />
-                <small>then $0.02 per slot</small>
+                <small>then $0.2 per slot</small>
               </td>
               <td>
                 600
                 <br />
-                <small>then $0.01 per slot</small>
+                <small>then $0.1 per slot</small>
               </td>
             </tr>
             <tr>
@@ -156,13 +157,13 @@ const Pricing = () => {
               <td>
                 90 sec video x 1
                 <br />
-                <small>then 0.5 per video</small>
+                <small>then $4.5 per video</small>
               </td>
               <td>
                 90 sec video x 3
                 <br />
                 <small>
-                  then 0.1 per video
+                  then $3.5 per video
                 </small>
               </td>
             </tr>
@@ -172,12 +173,12 @@ const Pricing = () => {
               <td>
                 x 3 per day
                 <br />
-                <small>then 0.9 per prompt</small>
+                <small>then $2.0 per prompt</small>
               </td>
               <td>
                 x 8 per day
                 <br />
-                <small>then 0.4 per prompt</small>
+                <small>then $1.5 per prompt</small>
               </td>
             </tr>
             <tr>
