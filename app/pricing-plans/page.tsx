@@ -28,19 +28,18 @@ const Pricing = () => {
         <section className="cards">
           <div className="card">
             <h2>Mere Guiding Plan</h2>
-            <p className="price">$13.99</p>
+            <p className="price">$18.99</p>
             <ul>
               <li>100 slots for idea storage</li>
               <li>100 words each slot</li>
               <li>3 images top per slot</li>
-              <li>a 30 seconds video top per slot</li>
               <li>open forum access</li>
             </ul>
             <button>Choose <strong>Mere</strong></button>
           </div>
           <div className="card popular">
             <h2>Companion Plan</h2>
-            <p className="price">$15.99</p>
+            <p className="price">$24.99</p>
             <ul>
               <li>300 slots for idea storage</li>
               <li>260 words each slot</li>
@@ -52,7 +51,7 @@ const Pricing = () => {
           </div>
           <div className="card">
             <h2>Side Kick Plan</h2>
-            <p className="price">$26.99</p>
+            <p className="price">$39.99</p>
             <ul>
               <li>600 slots for idea storage</li>
               <li>350 words each slot</li>
@@ -70,19 +69,18 @@ const Pricing = () => {
         <section className="cards">
           <div className="card">
             <h2>Mere Guiding Plan</h2>
-            <p className="price">$139.9</p>
+            <p className="price">$189.9</p>
             <ul>
               <li>100 slots for idea storage</li>
               <li>100 words each slot</li>
               <li>3 images top per slot</li>
-              <li>a 30 seconds video top per slot</li>
               <li>open forum access</li>
             </ul>
             <button>Choose <strong>Mere</strong></button>
           </div>
           <div className="card popular">
             <h2>Companion Plan</h2>
-            <p className="price">$159.9</p>
+            <p className="price">$249.9</p>
             <ul>
               <li>300 slots for idea storage</li>
               <li>260 words each slot</li>
@@ -94,7 +92,7 @@ const Pricing = () => {
           </div>
           <div className="card">
             <h2>Side Kick Plan</h2>
-            <p className="price">$269.9</p>
+            <p className="price">$399.9</p>
             <ul>
               <li>600 slots for idea storage</li>
               <li>350 words each slot</li>
@@ -154,7 +152,7 @@ const Pricing = () => {
             </tr>
             <tr>
               <td>video per slot</td>
-              <td>30 sec video x 1</td>
+              <td>❎</td>
               <td>
                 90 sec video x 1
                 <br />
@@ -170,7 +168,7 @@ const Pricing = () => {
             </tr>
             <tr>
               <td>Generative Prompt</td>
-              <td>x 1 per day</td>
+              <td>❎</td>
               <td>
                 x 3 per day
                 <br />
