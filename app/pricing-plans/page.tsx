@@ -76,44 +76,66 @@ const pricingData = {
   ],
 };
 
-const tableData = {
-  guide: [
-    ["100", "0.5"],
-    "100",
-    ["1", "1"],
-    [null],
-    [null],
-    "yes",
-    "yes",
-    "no"
+const comparisonData = {
+  traits: [
+    "Content Slots",
+    "Words Per Slot",
+    "Image Per Slot",
+    "Video Per Slot",
+    "AI Prompt",
+    "Advisory",
+    "Forum",
+    "Editor Assistance"
   ],
-  companion: [
-    ["300", "0.2"],
-    "200",
-    ["3", "0.5"],
-    ["30", "4.5"],
-    ["3", "2.0"],
-    "yes",
-    "yes",
-    "no"
-  ],
-  kick: [
-    ["600", "0.1"],
-    "300",
-    ["6", "0.25"],
-    ["60", "3.5"],
-    ["8", "1.5"],
-    "yes",
-    "yes",
-    "yes"
-  ]
+  guide: {
+    slotSize: "100",
+    slotSizeUpgrade: "1",
+    wordSizePerSlot: "100",
+    imagePerSlot: "1",
+    imageUpgrade: 0,
+    videoPerSlot: "❎",
+    videoUpgrade: null,
+    promptPerDay: 0,
+    promptUpgrade: 0,
+    advisory: "✅",
+    forum: "✅",
+    editor: "❎",
+  },
+  companion: {
+    slotSize: "150",
+    slotSizeUgrade: "0.5",
+    wordSizePerSlot: "200",
+    imagePerSlot: "3",
+    imageUpgrade: "1.0",
+    videoPerSlot: "30",
+    videoUpgrade: "4.5",
+    promptPerDay: "3",
+    promptUpgrade: "4.5",
+    advisory: "✅",
+    forum: "✅",
+    editor: "❎",
+  },
+  kick: {
+    slotSize: "240",
+    slotSizeUgrade: "0.25",
+    wordSizePerSlot: "250",
+    imagePerSlot: "6",
+    imageUpgrade: "0.5",
+    videoPerSlot: "60",
+    videoUpgrade: "3.5",
+    promptPerDay: "8",
+    promptUpgrade: "2.5",
+    advisory: "✅",
+    forum: "✅",
+    editor: "✅",
+  },
 };
 
 const Pricing = () => {
   const [view, setView] = useState<"monthly" | "annual">("monthly");
-  const [plan, setPlan] = useState<"guide" | "companion" | "kick">("kick");
+  const [plan, setPlan] = useState<"guide" | "companion" | "kick">("companion");
   const currentPricingDurationMode = pricingData[view];
-  const currentTableView = tableData[plan];
+  const currentTableView = comparisonData[plan];
 
   return (
     <div className="page">
@@ -168,84 +190,107 @@ const Pricing = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Content Slots</td>
-              <td>
-                10
-                <br />
-                <small>then $0.5 per slot</small>
-              </td>
-              <td>
-                30
-                <br />
-                <small>then $0.2 per slot</small>
-              </td>
-              <td>
-                60
-                <br />
-                <small>then $0.1 per slot</small>
-              </td>
-            </tr>
-            <tr>
-              <td># Words per slot</td>
-              <td>100</td>
-              <td>210</td>
-              <td>330</td>
-            </tr>
-            <tr>
-              <td># Image per slot</td>
-              <td>1</td>
-              <td>3</td>
-              <td>6</td>
-            </tr>
-            <tr>
-              <td>video per slot</td>
-              <td>❎</td>
-              <td>
-                30 sec video x 1
-                <br />
-                <small>then $4.5 per video</small>
-              </td>
-              <td>
-                60 sec video x 1
-                <br />
-                <small>
-                  then $3.5 per video
-                </small>
-              </td>
-            </tr>
-            <tr>
-              <td>Generative Prompt</td>
-              <td>❎</td>
-              <td>
-                x 3 per day
-                <br />
-                <small>then $2.0 per prompt</small>
-              </td>
-              <td>
-                x 8 per day
-                <br />
-                <small>then $1.5 per prompt</small>
-              </td>
-            </tr>
-            <tr>
-              <td>Creation Advisory</td>
-              <td>✅</td>
-              <td>✅</td>
-              <td>✅</td>
-            </tr>
-            <tr>
-              <td>Open Forum</td>
-              <td>✅</td>
-              <td>✅</td>
-              <td>✅</td>
-            </tr>
-            <tr>
-              <td>Editor's Choice</td>
-              <td>❎</td>
-              <td>❎</td>
-              <td>✅</td>
-            </tr>
+            {comparisonData.traits.map((trait, index) => (
+              <tr key={index}>
+                <td>{trait}</td>
+                <td>
+                  {trait === "Content Slots" && (
+                    <>
+                      {comparisonData.guide.slotSize}
+                      <br />
+                      <small>then ${comparisonData.guide.slotSizeUpgrade} per slot</small>
+                    </>
+                  )}
+                  {trait === "Words Per Slot" && comparisonData.guide.wordSizePerSlot}
+                  {trait === "Image Per Slot" && (
+                    <>
+                      {comparisonData.guide.imagePerSlot}
+                      <br />
+                      <small>then ${comparisonData.guide.imageUpgrade} per slot</small>
+                    </>
+                  )}
+                  {trait === "Video Per Slot" && (
+                    <>
+                      {comparisonData.guide.videoPerSlot}
+                      {comparisonData.guide.videoUpgrade && (
+                        <>
+                          <br />
+                          <small>then ${comparisonData.guide.videoUpgrade} per slot</small>
+                        </>
+                      )}
+                    </>
+                  )}
+                  {trait === "AI Prompt" && (
+                    <>
+                      {comparisonData.guide.promptPerDay}
+                      <br />
+                      <small>then {comparisonData.guide.promptUpgrade}</small>
+                    </>
+                  )}
+                  {trait === "Advisory" && comparisonData.guide.advisory}
+                  {trait === "Forum" && comparisonData.guide.forum}
+                  {trait === "Editor Assistance" && comparisonData.guide.editor}
+                </td>
+
+                <td>
+                  {trait === "Content Slots" && (
+                    <>
+                      {comparisonData.companion.slotSize}
+                      <br />
+                      <small>{comparisonData.companion.slotSizeUgrade}</small>
+                    </>
+                  )}
+                  {trait === "Words Per Slot" && comparisonData.companion.wordSizePerSlot}
+                  {trait === "Image Per Slot" && comparisonData.companion.imagePerSlot}
+                  {trait === "Video Per Slot" && (
+                    <>
+                      {comparisonData.companion.videoPerSlot}
+                      <br />
+                      <small>then {comparisonData.companion.videoUpgrade}</small>
+                    </>
+                  )}
+                  {trait === "AI Prompt" && (
+                    <>
+                      {comparisonData.companion.promptPerDay}
+                      <br />
+                      <small>then {comparisonData.companion.promptUpgrade}</small>
+                    </>
+                  )}
+                  {trait === "Advisory" && comparisonData.companion.advisory}
+                  {trait === "Forum" && comparisonData.companion.forum}
+                  {trait === "Editor Assistance" && comparisonData.companion.editor}
+                </td>
+
+                <td>
+                  {trait === "Content Slots" && (
+                    <>
+                      {comparisonData.kick.slotSize}
+                      <br />
+                      <small>{comparisonData.kick.slotSizeUgrade}</small>
+                    </>
+                  )}
+                  {trait === "Words Per Slot" && comparisonData.kick.wordSizePerSlot}
+                  {trait === "Image Per Slot" && comparisonData.kick.imagePerSlot}
+                  {trait === "Video Per Slot" && (
+                    <>
+                      {comparisonData.kick.videoPerSlot}
+                      <br />
+                      <small>then {comparisonData.kick.videoUpgrade}</small>
+                    </>
+                  )}
+                  {trait === "AI Prompt" && (
+                    <>
+                      {comparisonData.kick.promptPerDay}
+                      <br />
+                      <small>then {comparisonData.kick.promptUpgrade}</small>
+                    </>
+                  )}
+                  {trait === "Advisory" && comparisonData.kick.advisory}
+                  {trait === "Forum" && comparisonData.kick.forum}
+                  {trait === "Editor Assistance" && comparisonData.kick.editor}
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </section>
