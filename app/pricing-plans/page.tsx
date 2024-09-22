@@ -34,7 +34,6 @@ const Pricing = () => {
               <li>100 slots for idea storage</li>
               <li>100 words each slot</li>
               <li>3 images top per slot</li>
-              <li>open forum access</li>
             </ul>
             <button>Choose <strong>Mere</strong></button>
           </div>
@@ -46,7 +45,7 @@ const Pricing = () => {
               <li>260 words each slot</li>
               <li>5 images top per slot</li>
               <li>a 90 seconds video top per slot</li>
-              <li>open forum access</li>
+              <li>AI Prompt</li>
             </ul>
             <button>Choose <strong>Companion</strong></button>
           </div>
@@ -58,8 +57,8 @@ const Pricing = () => {
               <li>350 words each slot</li>
               <li>10 images top per slot</li>
               <li>three 90-second videos per slot</li>
-              <li>open forum access</li>
-              <li>specialised advising</li>
+              <li>AI Prompt</li>
+              <li>platform pushing</li>
             </ul>
             <button>Choose <strong>Side Kick</strong></button>
           </div>
@@ -75,7 +74,6 @@ const Pricing = () => {
               <li>100 slots for idea storage</li>
               <li>100 words each slot</li>
               <li>3 images top per slot</li>
-              <li>open forum access</li>
             </ul>
             <button>Choose <strong>Mere</strong></button>
           </div>
@@ -87,7 +85,7 @@ const Pricing = () => {
               <li>260 words each slot</li>
               <li>5 images top per slot</li>
               <li>a 90 seconds video top per slot</li>
-              <li>open forum access</li>
+              <li>AI Prompt</li>
             </ul>
             <button>Choose <strong>Companion</strong></button>
           </div>
@@ -99,8 +97,8 @@ const Pricing = () => {
               <li>350 words each slot</li>
               <li>10 images top per slot</li>
               <li>three 90-second videos per slot</li>
-              <li>open forum access</li>
-              <li>specialised advising</li>
+              <li>AI Prompt</li>
+              <li>platform pushing</li>
             </ul>
             <button>Choose <strong>Side Kick</strong></button>
           </div>
