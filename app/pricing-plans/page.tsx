@@ -2,9 +2,85 @@
 import React, { useState } from "react"
 import "./pricing.css";
 
+const pricingData = {
+  monthly: [
+    {
+      plan: "Mere Guiding Plan",
+      price: "$18.99",
+      features: [
+        "10 slots for content storage",
+        "100 words each slot",
+        "1 image per slot"
+      ]
+    },
+    {
+      plan: "Companion Plan",
+      price: "$24.99",
+      features: [
+        "30 slots for content storage",
+        "210 words each slot",
+        "3 images per slot",
+        "a 30-second video per slot",
+        "AI Prompt"
+      ],
+      popular: true,
+    },
+    {
+      plan: "Side Kick Plan",
+      price: "$39.99",
+      features: [
+        "60 slots for content storage",
+        "330 words each slot",
+        "6 images per slot",
+        "a 60-second video per slot",
+        "AI Prompt",
+        "platform pushing"
+      ],
+    },
+  ],
+  annual: [
+
+    {
+      plan: "Mere Guiding Plan",
+      price: "$189.9",
+      features: [
+        "10 slots for content storage",
+        "100 words each slot",
+        "1 image per slot"
+      ]
+    },
+    {
+      plan: "Companion Plan",
+      price: "$249.9",
+      features: [
+        "30 slots for content storage",
+        "210 words each slot",
+        "3 images per slot",
+        "a 30-second video per slot",
+        "AI Prompt"
+      ],
+      popular: true,
+    },
+    {
+      plan: "Side Kick Plan",
+      price: "$399.9",
+      features: [
+        "60 slots for content storage",
+        "330 words each slot",
+        "6 images per slot",
+        "a 60-second video per slot",
+        "AI Prompt",
+        "platform pushing"
+      ],
+    },
+
+  ],
+};
+
 const Pricing = () => {
   const [view, setView] = useState<"monthly" | "annual">("monthly");
   const [plan, setPlan] = useState<"guide" | "companion" | "kick">("kick");
+  const currentPricingDurationMode = pricingData[view];
 
   return (
     <div className="page">
@@ -27,85 +103,25 @@ const Pricing = () => {
         </div>
       </header>
 
-      {view === "monthly" && (
-        <section className="cards">
-          <div className="card">
-            <h2>Mere Guiding Plan</h2>
-            <p className="price">$18.99</p>
+      <section className="cards">
+        {currentPricingDurationMode.map((plan, index) => (
+          <div
+            className={`card ${plan.popular ? "popular" : ""}`}
+            key={index}
+          >
+            <h2>{plan.plan}</h2>
+            <p className="price">{plan.price}</p>
             <ul>
-              <li>10 slots for idea storage</li>
-              <li>100 words each slot</li>
-              <li>1 image top per slot</li>
+              {plan.features.map((feature, idx) => (
+                <li key={idx}>{feature}</li>
+              ))}
             </ul>
-            <button>Choose <strong>Mere</strong></button>
+            <button>
+              Choose <strong>{plan.plan}</strong>
+            </button>
           </div>
-          <div className="card popular">
-            <h2>Companion Plan</h2>
-            <p className="price">$24.99</p>
-            <ul>
-              <li>30 slots for idea storage</li>
-              <li>210 words each slot</li>
-              <li>3 images top per slot</li>
-              <li>a 30-second video top per slot</li>
-              <li>AI Prompt</li>
-            </ul>
-            <button>Choose <strong>Companion</strong></button>
-          </div>
-          <div className="card">
-            <h2>Side Kick Plan</h2>
-            <p className="price">$39.99</p>
-            <ul>
-              <li>60 slots for idea storage</li>
-              <li>330 words each slot</li>
-              <li>6 images top per slot</li>
-              <li>a 60-second video per slot</li>
-              <li>AI Prompt</li>
-              <li>platform pushing</li>
-            </ul>
-            <button>Choose <strong>Side Kick</strong></button>
-          </div>
-        </section>
-      )}
-
-      {view === "annual" && (
-        <section className="cards">
-          <div className="card">
-            <h2>Mere Guiding Plan</h2>
-            <p className="price">$189.9</p>
-            <ul>
-              <li>10 slots for idea storage</li>
-              <li>100 words each slot</li>
-              <li>1 image top per slot</li>
-            </ul>
-            <button>Choose <strong>Mere</strong></button>
-          </div>
-          <div className="card popular">
-            <h2>Companion Plan</h2>
-            <p className="price">$249.9</p>
-            <ul>
-              <li>30 slots for idea storage</li>
-              <li>210 words each slot</li>
-              <li>3 images top per slot</li>
-              <li>a 30-second video top per slot</li>
-              <li>AI Prompt</li>
-            </ul>
-            <button>Choose <strong>Companion</strong></button>
-          </div>
-          <div className="card">
-            <h2>Side Kick Plan</h2>
-            <p className="price">$399.9</p>
-            <ul>
-              <li>60 slots for idea storage</li>
-              <li>330 words each slot</li>
-              <li>6 images top per slot</li>
-              <li>a 60-second video per slot</li>
-              <li>AI Prompt</li>
-              <li>platform pushing</li>
-            </ul>
-            <button>Choose <strong>Side Kick</strong></button>
-          </div>
-        </section>
-      )}
+        ))}
+      </section>
 
       <section className="comparison-table">
         <h2>Compare Features on Plans</h2>
