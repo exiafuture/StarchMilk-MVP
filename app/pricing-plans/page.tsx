@@ -8,7 +8,7 @@ const pricingData = {
       plan: "Mere Guiding Plan",
       price: "$18.99",
       features: [
-        "10 slots for content storage",
+        "100 slots for content storage",
         "100 words each slot",
         "1 image per slot"
       ]
@@ -17,8 +17,8 @@ const pricingData = {
       plan: "Companion Plan",
       price: "$24.99",
       features: [
-        "30 slots for content storage",
-        "210 words each slot",
+        "300 slots for content storage",
+        "200 words each slot",
         "3 images per slot",
         "a 30-second video per slot",
         "AI Prompt"
@@ -29,8 +29,8 @@ const pricingData = {
       plan: "Side Kick Plan",
       price: "$39.99",
       features: [
-        "60 slots for content storage",
-        "330 words each slot",
+        "600 slots for content storage",
+        "300 words each slot",
         "6 images per slot",
         "a 60-second video per slot",
         "AI Prompt",
@@ -39,7 +39,6 @@ const pricingData = {
     },
   ],
   annual: [
-
     {
       plan: "Mere Guiding Plan",
       price: "$189.9",
@@ -77,10 +76,26 @@ const pricingData = {
   ],
 };
 
+const tableData = {
+  guide: [
+    ["10", "0.5"],
+    "100",
+    "1",
+    ["no"],
+    ["no"],
+    "yes",
+    "yes",
+    "no"
+  ],
+  companion: [],
+  kick: []
+};
+
 const Pricing = () => {
   const [view, setView] = useState<"monthly" | "annual">("monthly");
   const [plan, setPlan] = useState<"guide" | "companion" | "kick">("kick");
   const currentPricingDurationMode = pricingData[view];
+  const currentTableView = tableData[plan];
 
   return (
     <div className="page">
