@@ -44,7 +44,7 @@ const Pricing = () => {
               <li>300 slots for idea storage</li>
               <li>260 words each slot</li>
               <li>5 images top per slot</li>
-              <li>a 90 seconds video top per slot</li>
+              <li>a 60-second video top per slot</li>
               <li>AI Prompt</li>
             </ul>
             <button>Choose <strong>Companion</strong></button>
@@ -56,7 +56,7 @@ const Pricing = () => {
               <li>600 slots for idea storage</li>
               <li>350 words each slot</li>
               <li>10 images top per slot</li>
-              <li>three 90-second videos per slot</li>
+              <li>a 90-second video per slot</li>
               <li>AI Prompt</li>
               <li>platform pushing</li>
             </ul>
@@ -84,7 +84,7 @@ const Pricing = () => {
               <li>300 slots for idea storage</li>
               <li>260 words each slot</li>
               <li>5 images top per slot</li>
-              <li>a 90 seconds video top per slot</li>
+              <li>a 60-second video top per slot</li>
               <li>AI Prompt</li>
             </ul>
             <button>Choose <strong>Companion</strong></button>
@@ -96,7 +96,7 @@ const Pricing = () => {
               <li>600 slots for idea storage</li>
               <li>350 words each slot</li>
               <li>10 images top per slot</li>
-              <li>three 90-second videos per slot</li>
+              <li>a 90-second video per slot</li>
               <li>AI Prompt</li>
               <li>platform pushing</li>
             </ul>
@@ -153,12 +153,12 @@ const Pricing = () => {
               <td>video per slot</td>
               <td>❎</td>
               <td>
-                90 sec video x 1
+                60 sec video x 1
                 <br />
                 <small>then $4.5 per video</small>
               </td>
               <td>
-                90 sec video x 3
+                90 sec video x 1
                 <br />
                 <small>
                   then $3.5 per video
