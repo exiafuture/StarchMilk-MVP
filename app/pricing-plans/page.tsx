@@ -31,9 +31,9 @@ const Pricing = () => {
             <h2>Mere Guiding Plan</h2>
             <p className="price">$18.99</p>
             <ul>
-              <li>100 slots for idea storage</li>
+              <li>10 slots for idea storage</li>
               <li>100 words each slot</li>
-              <li>3 images top per slot</li>
+              <li>1 image top per slot</li>
             </ul>
             <button>Choose <strong>Mere</strong></button>
           </div>
@@ -41,10 +41,10 @@ const Pricing = () => {
             <h2>Companion Plan</h2>
             <p className="price">$24.99</p>
             <ul>
-              <li>300 slots for idea storage</li>
-              <li>260 words each slot</li>
-              <li>5 images top per slot</li>
-              <li>a 60-second video top per slot</li>
+              <li>30 slots for idea storage</li>
+              <li>210 words each slot</li>
+              <li>3 images top per slot</li>
+              <li>a 30-second video top per slot</li>
               <li>AI Prompt</li>
             </ul>
             <button>Choose <strong>Companion</strong></button>
@@ -53,10 +53,10 @@ const Pricing = () => {
             <h2>Side Kick Plan</h2>
             <p className="price">$39.99</p>
             <ul>
-              <li>600 slots for idea storage</li>
-              <li>350 words each slot</li>
-              <li>10 images top per slot</li>
-              <li>a 90-second video per slot</li>
+              <li>60 slots for idea storage</li>
+              <li>330 words each slot</li>
+              <li>6 images top per slot</li>
+              <li>a 60-second video per slot</li>
               <li>AI Prompt</li>
               <li>platform pushing</li>
             </ul>
@@ -71,9 +71,9 @@ const Pricing = () => {
             <h2>Mere Guiding Plan</h2>
             <p className="price">$189.9</p>
             <ul>
-              <li>100 slots for idea storage</li>
+              <li>10 slots for idea storage</li>
               <li>100 words each slot</li>
-              <li>3 images top per slot</li>
+              <li>1 image top per slot</li>
             </ul>
             <button>Choose <strong>Mere</strong></button>
           </div>
@@ -81,10 +81,10 @@ const Pricing = () => {
             <h2>Companion Plan</h2>
             <p className="price">$249.9</p>
             <ul>
-              <li>300 slots for idea storage</li>
-              <li>260 words each slot</li>
-              <li>5 images top per slot</li>
-              <li>a 60-second video top per slot</li>
+              <li>30 slots for idea storage</li>
+              <li>210 words each slot</li>
+              <li>3 images top per slot</li>
+              <li>a 30-second video top per slot</li>
               <li>AI Prompt</li>
             </ul>
             <button>Choose <strong>Companion</strong></button>
@@ -93,10 +93,10 @@ const Pricing = () => {
             <h2>Side Kick Plan</h2>
             <p className="price">$399.9</p>
             <ul>
-              <li>600 slots for idea storage</li>
-              <li>350 words each slot</li>
-              <li>10 images top per slot</li>
-              <li>a 90-second video per slot</li>
+              <li>60 slots for idea storage</li>
+              <li>330 words each slot</li>
+              <li>6 images top per slot</li>
+              <li>a 60-second video per slot</li>
               <li>AI Prompt</li>
               <li>platform pushing</li>
             </ul>
@@ -120,45 +120,43 @@ const Pricing = () => {
             <tr>
               <td>Content Slots</td>
               <td>
-                100
+                10
                 <br />
                 <small>then $0.5 per slot</small>
               </td>
               <td>
-                300
+                30
                 <br />
                 <small>then $0.2 per slot</small>
               </td>
               <td>
-                600
+                60
                 <br />
                 <small>then $0.1 per slot</small>
               </td>
             </tr>
             <tr>
               <td># Words per slot</td>
-              <td>
-                100
-              </td>
-              <td>260</td>
-              <td>350</td>
+              <td>100</td>
+              <td>210</td>
+              <td>330</td>
             </tr>
             <tr>
               <td># Image per slot</td>
+              <td>1</td>
               <td>3</td>
-              <td>5</td>
-              <td>10</td>
+              <td>6</td>
             </tr>
             <tr>
               <td>video per slot</td>
               <td>❎</td>
               <td>
-                60 sec video x 1
+                30 sec video x 1
                 <br />
                 <small>then $4.5 per video</small>
               </td>
               <td>
-                90 sec video x 1
+                60 sec video x 1
                 <br />
                 <small>
                   then $3.5 per video
