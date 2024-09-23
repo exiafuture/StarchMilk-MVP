@@ -2,11 +2,11 @@
 import React from 'react';
 import "./navbar.css"
 import Image from 'next/image';
-import { usetheme } from "./themeContext";
+import { Usetheme } from "./themeContext";
 import Link from "next/link";
 
 const NavBar: React.FC = () => {
-  const { theme, toggleTheme } = usetheme();
+  const { theme, toggleTheme } = Usetheme();
 
   return (
     <nav className={`navbar ${theme}`}>
