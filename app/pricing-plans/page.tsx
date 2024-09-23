@@ -89,42 +89,42 @@ const comparisonData = {
   ],
   guide: {
     slotSize: "100",
-    slotSizeUpgrade: "1",
+    slotSizeUpgrade: 1.0,
     wordSizePerSlot: "100",
     imagePerSlot: "1",
     imageUpgrade: 1.2,
     videoPerSlot: "❎",
     videoUpgrade: null,
     promptPerDay: "❎",
-    promptUpgrade: 0,
+    promptUpgrade: null,
     advisory: "✅",
     forum: "✅",
     editor: "❎",
   },
   companion: {
     slotSize: "150",
-    slotSizeUgrade: "0.5",
+    slotSizeUgrade: 0.5,
     wordSizePerSlot: "200",
     imagePerSlot: "3",
-    imageUpgrade: "1.0",
+    imageUpgrade: 1.0,
     videoPerSlot: "30",
-    videoUpgrade: "4.5",
+    videoUpgrade: 4.5,
     promptPerDay: "3",
-    promptUpgrade: "4.5",
+    promptUpgrade: 4.5,
     advisory: "✅",
     forum: "✅",
     editor: "❎",
   },
   kick: {
     slotSize: "240",
-    slotSizeUgrade: "0.25",
+    slotSizeUgrade: 0.25,
     wordSizePerSlot: "250",
     imagePerSlot: "6",
-    imageUpgrade: "0.5",
+    imageUpgrade: 0.5,
     videoPerSlot: "60",
-    videoUpgrade: "3.5",
+    videoUpgrade: 3.5,
     promptPerDay: "8",
-    promptUpgrade: "2.5",
+    promptUpgrade: 2.5,
     advisory: "✅",
     forum: "✅",
     editor: "✅",
@@ -223,8 +223,11 @@ const Pricing = () => {
                   {trait === "AI Prompt" && (
                     <>
                       {comparisonData.guide.promptPerDay}
-                      <br />
-                      <small>then {comparisonData.guide.promptUpgrade}</small>
+                      {comparisonData.guide.promptUpgrade && (
+                        <>
+                          <br />
+                          <small>then {comparisonData.guide.promptUpgrade}</small>
+                        </>)}
                     </>
                   )}
                   {trait === "Advisory" && comparisonData.guide.advisory}
@@ -237,23 +240,29 @@ const Pricing = () => {
                     <>
                       {comparisonData.companion.slotSize}
                       <br />
-                      <small>{comparisonData.companion.slotSizeUgrade}</small>
+                      <small>then {comparisonData.companion.slotSizeUgrade} per slot</small>
                     </>
                   )}
                   {trait === "Words Per Slot" && comparisonData.companion.wordSizePerSlot}
-                  {trait === "Image Per Slot" && comparisonData.companion.imagePerSlot}
+                  {trait === "Image Per Slot" && (
+                    <>
+                      {comparisonData.companion.imagePerSlot}
+                      <br />
+                      <small>then ${comparisonData.companion.imageUpgrade} per slot</small>
+                    </>
+                  )}
                   {trait === "Video Per Slot" && (
                     <>
-                      {comparisonData.companion.videoPerSlot}
+                      {comparisonData.companion.videoPerSlot} sec video x 1
                       <br />
-                      <small>then {comparisonData.companion.videoUpgrade}</small>
+                      <small>then ${comparisonData.companion.videoUpgrade} per 30 sec video</small>
                     </>
                   )}
                   {trait === "AI Prompt" && (
                     <>
-                      {comparisonData.companion.promptPerDay}
+                      x {comparisonData.companion.promptPerDay} per day
                       <br />
-                      <small>then {comparisonData.companion.promptUpgrade}</small>
+                      <small>then ${comparisonData.companion.promptUpgrade} per prompt</small>
                     </>
                   )}
                   {trait === "Advisory" && comparisonData.companion.advisory}
