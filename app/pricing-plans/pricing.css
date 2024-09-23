@@ -259,6 +259,7 @@
     padding: 10px;
     margin: 0 10px;
     border: none;
+    color: black;
     cursor: pointer;
     background-color: #f0f0f0;
     transition: background-color 0.3s ease;
@@ -272,13 +273,30 @@
   .plan-details {
     border: 1px solid #ddd;
     padding: 20px;
-    border-radius: 8px;
+    background-color: #e3ecfa;
+    border-radius: 15px;
+  }
+
+  .dark .plan-details {
+    background-color: #354394;
+    border-color: #404878;
+  }
+
+  .trait-value small {
+    color: #abbad1;
+    float: right;
+  }
+
+  .dark .trait-value small {
+    color: #a594ab;
   }
   
   .trait-row {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
+    height: 4em;
+    margin-top: 1rem;
   }
   
   .divider {
