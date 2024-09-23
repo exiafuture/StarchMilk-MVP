@@ -240,11 +240,44 @@
     font-size: 1.3rem;
   }
   
-  .comparison-table {
+  table {
     display: none;
   }
 
   .comparison-mobile-view { 
     display: block;
+    margin-bottom: 5rem;
+  }
+
+  .plan-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .plan-selector button {
+    padding: 10px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+  }
+  .plan-selector button.active {
+    background-color: #0070f3;
+    color: white;
+  }
+  .plan-details {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .trait-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  .divider {
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
   }
 }
