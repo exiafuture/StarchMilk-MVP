@@ -73,12 +73,12 @@
   background-color: #f9f9f9;
 }
 
-.card h2 {
+.card h1 {
   font-size: 1.8rem;
   margin-bottom: 15px;
 }
 
-.dark .card h2 {
+.dark .card h1 {
   color: slategrey;
 }
 
@@ -200,7 +200,7 @@
     margin-top: 0rem;
   }
 
-  .card h2 {
+  .card h1 {
     font-size: 1.5rem;
   }
 

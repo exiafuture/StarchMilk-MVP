@@ -5,7 +5,7 @@ import "./pricing.css";
 const pricingData = {
   monthly: [
     {
-      plan: "Mere Guiding Plan",
+      plan: "Starter",
       price: "$18.99",
       features: [
         "100 slots for content storage",
@@ -14,7 +14,7 @@ const pricingData = {
       ]
     },
     {
-      plan: "Companion Plan",
+      plan: "Pro",
       price: "$24.99",
       features: [
         "150 slots for content storage",
@@ -26,7 +26,7 @@ const pricingData = {
       popular: true,
     },
     {
-      plan: "Side Kick Plan",
+      plan: "Advanced",
       price: "$39.99",
       features: [
         "240 slots for content storage",
@@ -40,7 +40,7 @@ const pricingData = {
   ],
   annual: [
     {
-      plan: "Mere Guiding Plan",
+      plan: "Starter",
       price: "$189.9",
       features: [
         "100 slots for content storage",
@@ -49,7 +49,7 @@ const pricingData = {
       ]
     },
     {
-      plan: "Companion Plan",
+      plan: "Pro",
       price: "$249.9",
       features: [
         "150 slots for content storage",
@@ -61,7 +61,7 @@ const pricingData = {
       popular: true,
     },
     {
-      plan: "Side Kick Plan",
+      plan: "Advanced",
       price: "$399.9",
       features: [
         "240 slots for content storage",
@@ -72,7 +72,6 @@ const pricingData = {
         "platform pushing"
       ],
     },
-
   ],
 };
 
@@ -164,7 +163,7 @@ const Pricing = () => {
             className={`card ${plan.popular ? "popular" : ""}`}
             key={index}
           >
-            <h2>{plan.plan}</h2>
+            <h1>{plan.plan}</h1>
             <p className="price">{plan.price}</p>
             <ul>
               {plan.features.map((feature, idx) => (
@@ -184,9 +183,9 @@ const Pricing = () => {
           <thead>
             <tr>
               <th>Features</th>
-              <th>Mere</th>
-              <th>Companion</th>
-              <th>Side Kick</th>
+              <th>Starter</th>
+              <th>Pro</th>
+              <th>Advanced</th>
             </tr>
           </thead>
           <tbody>
