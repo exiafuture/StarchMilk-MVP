@@ -147,6 +147,10 @@
   border: 3px solid #e32b31;
 }
 
+.dark .popular {
+  border: 3px solid #b86206;
+}
+
 .comparison-table table {
   width: 100%;
   border-collapse: collapse;
