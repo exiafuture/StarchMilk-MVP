@@ -87,6 +87,7 @@ const comparisonData = {
     "Editor Assistance"
   ],
   guide: {
+    name: "Starter",
     slotSize: "100",
     slotSizeUpgrade: 1.0,
     wordSizePerSlot: "100",
@@ -101,8 +102,9 @@ const comparisonData = {
     editor: "❎",
   },
   companion: {
+    name: "Pro",
     slotSize: "150",
-    slotSizeUgrade: 0.5,
+    slotSizeUpgrade: 0.5,
     wordSizePerSlot: "200",
     imagePerSlot: "3",
     imageUpgrade: 1.0,
@@ -115,8 +117,9 @@ const comparisonData = {
     editor: "❎",
   },
   kick: {
+    name: "Advanced",
     slotSize: "240",
-    slotSizeUgrade: 0.25,
+    slotSizeUpgrade: 0.25,
     wordSizePerSlot: "250",
     imagePerSlot: "6",
     imageUpgrade: 0.5,
@@ -179,6 +182,72 @@ const Pricing = () => {
 
       <section className="comparison-table">
         <h2>Compare Features on Plans</h2>
+
+        {/**/}
+        <div className="comparison-mobile-view">
+          <div className="plan-selector">
+            <button
+              className={plan === "guide" ? "active" : ""}
+              onClick={() => setPlan("guide")}
+            >
+              Starter
+            </button>
+            <button
+              className={plan === "companion" ? "active" : ""}
+              onClick={() => setPlan("companion")}
+            >
+              Pro
+            </button>
+            <button
+              className={plan === "kick" ? "active" : ""}
+              onClick={() => setPlan("kick")}
+            >
+              Advanced
+            </button>
+          </div>
+
+          <div className="plan-details">
+            <h3>{currentTableView.name}</h3>
+            {comparisonData.traits.map((trait, index) => (
+              <div key={index} className="trait-row">
+                <span className="trait-name">{trait}</span>
+                <span className="trait-value">
+                  {trait === "Content Slots" && (
+                    <>
+                      {currentTableView.slotSize}
+                      <small>{currentTableView.slotSizeUpgrade}</small>
+                    </>
+                  )}
+                  {trait === "Words Per Slot" && currentTableView.wordSizePerSlot}
+                  {trait === "Image Per Slot" && currentTableView.imagePerSlot}
+                  {trait === "Video Per Slot" && (
+                    <>
+                      {currentTableView.videoPerSlot}
+                      {currentTableView.videoUpgrade && (
+                        <small> then {currentTableView.videoUpgrade}</small>
+                      )}
+                    </>
+                  )}
+                  {trait === "AI Prompt" && (
+                    <>
+                      {currentTableView.promptPerDay}
+                      {currentTableView.promptUpgrade && (
+                        <small> then {currentTableView.promptUpgrade}</small>
+                      )}
+                    </>
+                  )}
+                  {trait === "Advisory" && currentTableView.advisory}
+                  {trait === "Forum" && currentTableView.forum}
+                  {trait === "Editor's Choice" && currentTableView.editor}
+                </span>
+                {index !== comparisonData.traits.length - 1 && <hr className="divider" />}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/*table view, min width > 933px*/}
+
         <table>
           <thead>
             <tr>
@@ -239,7 +308,7 @@ const Pricing = () => {
                     <>
                       {comparisonData.companion.slotSize}
                       <br />
-                      <small>then {comparisonData.companion.slotSizeUgrade} per slot</small>
+                      <small>then ${comparisonData.companion.slotSizeUpgrade} per slot</small>
                     </>
                   )}
                   {trait === "Words Per Slot" && comparisonData.companion.wordSizePerSlot}
@@ -287,7 +356,7 @@ const Pricing = () => {
                     <>
                       {comparisonData.kick.slotSize}
                       <br />
-                      <small>then ${comparisonData.kick.slotSizeUgrade} per slot</small>
+                      <small>then ${comparisonData.kick.slotSizeUpgrade} per slot</small>
                     </>
                   )}
                   {trait === "Words Per Slot" && comparisonData.kick.wordSizePerSlot}

@@ -191,6 +191,10 @@
   color: #787878;
 }
 
+.comparison-mobile-view {
+  display: none;
+}
+
 @media (min-width: 1200px) {
   .cards {
     margin-left: 5rem;
@@ -237,7 +241,10 @@
   }
   
   .comparison-table {
+    display: none;
+  }
+
+  .comparison-mobile-view { 
     display: block;
-    margin-bottom: 5rem;
   }
 }
