@@ -183,7 +183,7 @@ const Pricing = () => {
       <section className="comparison-table">
         <h2>Compare Features on Plans</h2>
 
-        {/**/}
+        {/*mobile table list view*/}
         <div className="comparison-mobile-view">
           <div className="plan-selector">
             <button
@@ -209,38 +209,60 @@ const Pricing = () => {
           <div className="plan-details">
             <h3>{currentTableView.name}</h3>
             {comparisonData.traits.map((trait, index) => (
-              <div key={index} className="trait-row">
-                <span className="trait-name">{trait}</span>
-                <span className="trait-value">
-                  {trait === "Content Slots" && (
-                    <>
-                      {currentTableView.slotSize}
-                      <small>{currentTableView.slotSizeUpgrade}</small>
-                    </>
-                  )}
-                  {trait === "Words Per Slot" && currentTableView.wordSizePerSlot}
-                  {trait === "Image Per Slot" && currentTableView.imagePerSlot}
-                  {trait === "Video Per Slot" && (
-                    <>
-                      {currentTableView.videoPerSlot}
-                      {currentTableView.videoUpgrade && (
-                        <small> then {currentTableView.videoUpgrade}</small>
-                      )}
-                    </>
-                  )}
-                  {trait === "AI Prompt" && (
-                    <>
-                      {currentTableView.promptPerDay}
-                      {currentTableView.promptUpgrade && (
-                        <small> then {currentTableView.promptUpgrade}</small>
-                      )}
-                    </>
-                  )}
-                  {trait === "Advisory" && currentTableView.advisory}
-                  {trait === "Forum" && currentTableView.forum}
-                  {trait === "Editor's Choice" && currentTableView.editor}
-                </span>
-                {index !== comparisonData.traits.length - 1 && <hr className="divider" />}
+              <div className="trait-container">
+                <div key={index} className="trait-row">
+                  <span className="trait-name">{trait}</span>
+                  <span className="trait-value">
+                    {trait === "Content Slots" && (
+                      <>
+                        {currentTableView.slotSize} slots for free
+                        <br />
+                        <small>then ${currentTableView.slotSizeUpgrade} per slot</small>
+                      </>
+                    )}
+                    {trait === "Words Per Slot" && (
+                      <>
+                        {currentTableView.wordSizePerSlot} words
+                      </>
+                    )}
+                    {trait === "Image Per Slot" && (
+                      <>
+                        {currentTableView.imagePerSlot} images max
+                        <br />
+                        <small>then ${currentTableView.imageUpgrade} per image</small>
+                      </>
+                    )}
+                    {trait === "Video Per Slot" && (
+                      <>
+                        One {currentTableView.videoPerSlot} sec video free
+                        {currentTableView.videoUpgrade && (
+                          <>
+                            <br />
+                            <small> then ${currentTableView.videoUpgrade} per {currentTableView.videoPerSlot} sec video</small>
+                          </>
+                        )}
+                      </>
+                    )}
+                    {trait === "AI Prompt" && (
+                      <>
+                        {currentTableView.promptPerDay} prompts free per day
+                        {currentTableView.promptUpgrade && (
+                          <>
+                            <br />
+                            <small> then ${currentTableView.promptUpgrade} per prompt</small>
+                          </>
+                        )}
+                      </>
+                    )}
+                    {trait === "Advisory" && currentTableView.advisory}
+                    {trait === "Forum" && currentTableView.forum}
+                    {trait === "Editor Assistance" &&
+                      currentTableView.editor}
+                  </span>
+                </div>
+                {index !== comparisonData.traits.length - 1 &&
+                  <div className="divider"></div>
+                }
               </div>
             ))}
           </div>
