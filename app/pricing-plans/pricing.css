@@ -256,9 +256,11 @@
   }
 
   .plan-selector button {
-    padding: 10px;
+    padding: 15px;
     margin: 0 10px;
     border: none;
+    font-weight: 700;
+    border-radius: 13px;
     color: black;
     cursor: pointer;
     background-color: #f0f0f0;
@@ -266,8 +268,12 @@
   }
 
   .plan-selector button.active {
-    background-color: #0070f3;
+    background-color: #eaadf9;
     color: white;
+  }
+
+  .dark .plan-selector button.active {
+    background-color: #0187f4;
   }
   
   .plan-details {
@@ -285,6 +291,14 @@
   .trait-value small {
     color: #abbad1;
     float: right;
+  }
+
+  .plan-details h3 {
+    font-weight: 700;
+  }
+
+  .trait-value {
+    font-weight: 600;
   }
 
   .dark .trait-value small {

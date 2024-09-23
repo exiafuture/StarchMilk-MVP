@@ -234,7 +234,16 @@ const Pricing = () => {
                     )}
                     {trait === "Video Per Slot" && (
                       <>
-                        One {currentTableView.videoPerSlot} sec video free
+                        {currentTableView.videoPerSlot !== "❎" && (
+                          <>
+                            One {currentTableView.videoPerSlot} sec video free
+                          </>
+                        )}
+                        {currentTableView.videoPerSlot === "❎" && (
+                          <>
+                            {currentTableView.videoPerSlot}
+                          </>
+                        )}
                         {currentTableView.videoUpgrade && (
                           <>
                             <br />
@@ -245,7 +254,16 @@ const Pricing = () => {
                     )}
                     {trait === "AI Prompt" && (
                       <>
-                        {currentTableView.promptPerDay} prompts free per day
+                        {currentTableView.promptPerDay === "❎" && (
+                          <>
+                            {currentTableView.promptPerDay}
+                          </>
+                        )}
+                        {currentTableView.promptPerDay !== "❎" && (
+                          <>
+                            {currentTableView.promptPerDay} prompts free per day
+                          </>
+                        )}
                         {currentTableView.promptUpgrade && (
                           <>
                             <br />
