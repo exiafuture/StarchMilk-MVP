@@ -209,7 +209,7 @@ const Pricing = () => {
           <div className="plan-details">
             <h3>{currentTableView.name}</h3>
             {comparisonData.traits.map((trait, index) => (
-              <div className="trait-container">
+              <div key={index} className="trait-container">
                 <div key={index} className="trait-row">
                   <span className="trait-name">{trait}</span>
                   <span className="trait-value">
