@@ -209,6 +209,7 @@
   }
   
   .comparison-table {
-    display: none;
+    display: block;
+    margin-bottom: 5rem;
   }
 }
