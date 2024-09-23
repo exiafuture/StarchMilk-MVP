@@ -247,22 +247,35 @@ const Pricing = () => {
                   {trait === "Image Per Slot" && (
                     <>
                       {comparisonData.companion.imagePerSlot}
-                      <br />
-                      <small>then ${comparisonData.companion.imageUpgrade} per slot</small>
+                      {comparisonData.companion.imageUpgrade && (
+                        <>
+
+                          <br />
+                          <small>then ${comparisonData.companion.imageUpgrade} per slot</small>
+                        </>
+                      )}
                     </>
                   )}
                   {trait === "Video Per Slot" && (
                     <>
                       {comparisonData.companion.videoPerSlot} sec video x 1
-                      <br />
-                      <small>then ${comparisonData.companion.videoUpgrade} per 30 sec video</small>
+                      {comparisonData.companion.videoUpgrade && (
+                        <>
+                          <br />
+                          <small>then ${comparisonData.companion.videoUpgrade} per 30 sec video</small>
+                        </>
+                      )}
                     </>
                   )}
                   {trait === "AI Prompt" && (
                     <>
                       x {comparisonData.companion.promptPerDay} per day
-                      <br />
-                      <small>then ${comparisonData.companion.promptUpgrade} per prompt</small>
+                      {comparisonData.companion.promptUpgrade && (
+                        <>
+                          <br />
+                          <small>then ${comparisonData.companion.promptUpgrade} per prompt</small>
+                        </>
+                      )}
                     </>
                   )}
                   {trait === "Advisory" && comparisonData.companion.advisory}
@@ -275,23 +288,41 @@ const Pricing = () => {
                     <>
                       {comparisonData.kick.slotSize}
                       <br />
-                      <small>{comparisonData.kick.slotSizeUgrade}</small>
+                      <small>then ${comparisonData.kick.slotSizeUgrade} per slot</small>
                     </>
                   )}
                   {trait === "Words Per Slot" && comparisonData.kick.wordSizePerSlot}
-                  {trait === "Image Per Slot" && comparisonData.kick.imagePerSlot}
+                  {trait === "Image Per Slot" && (
+                    <>
+                      {comparisonData.kick.imagePerSlot}
+                      {comparisonData.kick.imageUpgrade && (
+                        <>
+                          <br />
+                          <small>then ${comparisonData.kick.imageUpgrade} per slot</small>
+                        </>
+                      )}
+                    </>
+                  )}
                   {trait === "Video Per Slot" && (
                     <>
-                      {comparisonData.kick.videoPerSlot}
-                      <br />
-                      <small>then {comparisonData.kick.videoUpgrade}</small>
+                      {comparisonData.kick.videoPerSlot} sec video x 1
+                      {comparisonData.kick.videoUpgrade && (
+                        <>
+                          <br />
+                          <small>then ${comparisonData.kick.videoUpgrade} per {comparisonData.kick.videoPerSlot} sec video</small>
+                        </>
+                      )}
                     </>
                   )}
                   {trait === "AI Prompt" && (
                     <>
-                      {comparisonData.kick.promptPerDay}
-                      <br />
-                      <small>then {comparisonData.kick.promptUpgrade}</small>
+                      x {comparisonData.kick.promptPerDay} per day
+                      {comparisonData.kick.promptUpgrade && (
+                        <>
+                          <br />
+                          <small>then ${comparisonData.kick.promptUpgrade} per prompt</small>
+                        </>
+                      )}
                     </>
                   )}
                   {trait === "Advisory" && comparisonData.kick.advisory}
