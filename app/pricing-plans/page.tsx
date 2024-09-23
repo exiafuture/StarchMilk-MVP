@@ -17,7 +17,7 @@ const pricingData = {
       plan: "Companion Plan",
       price: "$24.99",
       features: [
-        "300 slots for content storage",
+        "150 slots for content storage",
         "200 words each slot",
         "3 images per slot",
         "a 30-second video per slot",
@@ -29,8 +29,8 @@ const pricingData = {
       plan: "Side Kick Plan",
       price: "$39.99",
       features: [
-        "600 slots for content storage",
-        "300 words each slot",
+        "240 slots for content storage",
+        "250 words each slot",
         "6 images per slot",
         "a 60-second video per slot",
         "AI Prompt",
@@ -43,7 +43,7 @@ const pricingData = {
       plan: "Mere Guiding Plan",
       price: "$189.9",
       features: [
-        "10 slots for content storage",
+        "100 slots for content storage",
         "100 words each slot",
         "1 image per slot"
       ]
@@ -52,8 +52,8 @@ const pricingData = {
       plan: "Companion Plan",
       price: "$249.9",
       features: [
-        "30 slots for content storage",
-        "210 words each slot",
+        "150 slots for content storage",
+        "200 words each slot",
         "3 images per slot",
         "a 30-second video per slot",
         "AI Prompt"
@@ -64,8 +64,8 @@ const pricingData = {
       plan: "Side Kick Plan",
       price: "$399.9",
       features: [
-        "60 slots for content storage",
-        "330 words each slot",
+        "240 slots for content storage",
+        "250 words each slot",
         "6 images per slot",
         "a 60-second video per slot",
         "AI Prompt",
