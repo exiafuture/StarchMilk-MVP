@@ -139,6 +139,11 @@ const Pricing = () => {
   const currentPricingDurationMode = pricingData[view];
   const currentTableView = comparisonData[plan];
 
+  console.log(currentPricingDurationMode);
+  console.log(currentTableView);
+  console.log(view);
+  console.log(plan);
+
   return (
     <div className="page">
       <header className="header">
