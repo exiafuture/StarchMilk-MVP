@@ -7,6 +7,7 @@ import Link from "next/link";
 
 const NavBar: React.FC = () => {
   const { theme, toggleTheme } = Usetheme();
+  console.log(theme);
 
   return (
     <nav className={`navbar ${theme}`}>
@@ -53,6 +54,25 @@ const NavBar: React.FC = () => {
           </button>
         </li>
       </ul>
+
+      <button className={`${theme} access-btn-mobile`}>
+        {
+          theme === "light"
+            ?
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 105 105" fill="none">
+              <circle cx="52.5" cy="52.5" r="52.5" fill="#FD8787" />
+              <line x1="28.5958" y1="22.0148" x2="76.5085" y2="22.5139" stroke="white" strokeWidth="10" />
+              <line x1="28.5958" y1="72.9857" x2="76.5085" y2="73.4848" stroke="white" strokeWidth="10" />
+              <line x1="28.5958" y1="47.5003" x2="76.5085" y2="47.9994" stroke="white" strokeWidth="10" />
+            </svg>
+            : <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 105 106" fill="none">
+              <circle cx="52.5" cy="53.366" r="52.5" fill="#78F7FF" />
+              <line x1="28.5958" y1="22.8809" x2="76.5093" y2="23.38" stroke="#010101" strokeWidth="10" />
+              <line x1="28.5958" y1="73.8517" x2="76.5093" y2="74.3508" stroke="#010101" strokeWidth="10" />
+              <line x1="28.5958" y1="48.3663" x2="76.5093" y2="48.8654" stroke="#010101" strokeWidth="10" />
+            </svg>
+        }
+      </button>
     </nav>
   );
 };

@@ -64,6 +64,10 @@
     color: var(--foreground-dark);
 }
 
+.access-btn-mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 933px) {
     .navbar {
         position: fixed;
@@ -88,5 +92,14 @@
     .nav-link {
         padding-left: 8px;
         padding-right: 8px;
+    }
+
+    .access-btn-mobile {
+        display: none;
+        position: fixed;
+        top: 1.8px;
+        left: 1.8px;
+        z-index: 21;
+        cursor: pointer;
     }
 }
