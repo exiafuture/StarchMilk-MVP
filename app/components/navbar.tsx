@@ -7,7 +7,6 @@ import Link from "next/link";
 
 const NavBar: React.FC = () => {
   const { theme, toggleTheme } = Usetheme();
-  console.log(theme);
 
   return (
     <nav className={`navbar ${theme}`}>
