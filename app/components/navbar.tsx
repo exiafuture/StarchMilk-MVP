@@ -54,7 +54,7 @@ const NavBar: React.FC = () => {
         </li>
       </ul>
 
-      <button className={`${theme} access-btn-mobile`}>
+      <button className={`access-btn-mobile`}>
         {
           theme === "light"
             ?
