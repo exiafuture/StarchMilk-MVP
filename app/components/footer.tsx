@@ -4,6 +4,8 @@ import "./footer.css";
 import Link from 'next/link';
 import React from 'react';
 
+const currentYear = new Date().getFullYear();
+
 const Footer = () => {
   return (
     <footer className="flex flex-col md:flex-row justify-between items-center px-4 py-6 border-t">
@@ -22,7 +24,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="text-sm">© 2024 MyApp. All rights reserved.</div>
+        <div className="text-sm">© {currentYear} MyApp. All rights reserved.</div>
       </div>
 
       {/* Section B - Navigation Links */}
