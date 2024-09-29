@@ -68,10 +68,13 @@
     display: none;
 }
 
+.mobile-home {
+    display: none;
+}
+
 @media only screen and (max-width: 933px) {
     .navbar {
         position: fixed;
-        padding: 12px 3px;
         z-index: 17;
         bottom:0;
         justify-content: space-evenly;
@@ -90,8 +93,8 @@
     }
 
     .nav-link {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-left: 4.5px;
+        padding-right: 4.5px;
     }
 
     .access-btn-mobile {
@@ -101,5 +104,9 @@
         left: 1.8px;
         z-index: 21;
         cursor: pointer;
+    }
+
+    .mobile-home {
+        display: block;
     }
 }
