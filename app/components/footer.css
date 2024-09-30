@@ -4,8 +4,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
-  border-top: 1px solid #ccc;
+  padding: 24px;
+  margin-bottom: 4rem;
+  border-top: 1px solid #eeeccc;
 }
 
 /* Section A styling */
@@ -68,6 +69,7 @@
 /* Responsive design */
 @media (min-width: 934px) {
   .footer {
+    margin-bottom: 0rem;
     flex-direction: row;
   }
 
