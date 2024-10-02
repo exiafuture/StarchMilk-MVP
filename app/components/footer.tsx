@@ -8,20 +8,16 @@ const currentYear = new Date().getFullYear();
 const Footer = () => {
   return (
     <footer className="footer">
-      {/* Section A */}
       <div className="footer-section-a">
-        {/* Logo and App Name */}
         <div className="footer-logo-app">
           <img src="/images/logo.png" alt="Logo" className="footer-logo" />
           <span className="footer-app-name">Ancedote</span>
         </div>
 
-        {/* Terms and Privacy */}
         <div className="footer-terms">
           <Link href="/terms">Terms</Link>
         </div>
 
-        {/* Copyright */}
         <div className="footer-copyright">© {currentYear} MyApp. All rights reserved.</div>
       </div>
 
