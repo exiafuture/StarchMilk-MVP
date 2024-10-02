@@ -5,7 +5,7 @@
   align-items: center;
   padding: 24px;
   margin-bottom: 4rem;
-  background-color: #aacce3;
+  background-color: #e7f7e6;
   font-family: "Arial", sans-serif;
   text-align: center;
   border-top: 3px solid #e3f7fa;
@@ -68,7 +68,7 @@
 
   .footer-section-b {
     flex-direction: row;
+    align-items: center;
     gap: 24px;
-    margin-top: 0;
   }
 }
