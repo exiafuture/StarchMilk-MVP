@@ -7,21 +7,21 @@ const currentYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-section-a">
-        <div className="footer-logo-app">
-          <img src="/images/logo.png" alt="Logo" className="footer-logo" />
-          <span className="footer-app-name">Ancedote</span>
+    <footer className="">
+      <div className="">
+        <div className="">
+          <img src="/images/logo.png" alt="Logo" className="" />
+          <span className="">Ancedote</span>
         </div>
 
-        <div className="footer-terms">
+        <div className="">
           <Link href="/terms">Terms</Link>
         </div>
 
-        <div className="footer-copyright">© {currentYear} MyApp. All rights reserved.</div>
+        <div className="">© {currentYear} MyApp. All rights reserved.</div>
       </div>
 
-      <div className="footer-section-b">
+      <div className="">
         <Link href="/">Home</Link>
         <Link href="/services">Services</Link>
         <Link href="/pricing-plans">Pricing</Link>
