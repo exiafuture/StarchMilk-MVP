@@ -1,6 +1,4 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
   --background-light: #f1f9f2;
@@ -26,10 +24,4 @@ body {
   color: var(--foreground-dark);
   background-color: var(--background-dark);
   transition: background-color 0.1s ease, color 0.1s ease;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
 }
