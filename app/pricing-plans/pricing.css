@@ -308,7 +308,6 @@
   .trait-row {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
     height: 4em;
     margin-top: 1rem;
   }

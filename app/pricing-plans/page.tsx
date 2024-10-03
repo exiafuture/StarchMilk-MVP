@@ -227,7 +227,7 @@ const Pricing = () => {
                     )}
                     {trait === "Image Per Slot" && (
                       <>
-                        {currentTableView.imagePerSlot} images max
+                        {currentTableView.imagePerSlot} images maximum
                         <br />
                         <small>then ${currentTableView.imageUpgrade} per image</small>
                       </>
